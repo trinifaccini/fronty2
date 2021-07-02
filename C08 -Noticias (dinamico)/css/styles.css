@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+
+:root{
+    --color-fondo-header: crimson;
+    --color-menu-header: black;
+    --color-nacional: rgb(167, 166, 166);
+    --color-internacional: rgb(219, 213, 213);
+    --color-titulo-noticia: rgb(114, 111, 111);
+    --color-fecha-nacional: rgb(255, 255, 255);;
+    --color-fecha-internacional: rgb(88, 88, 88);
+    --color-fondo-footer: black;
+    --color-letras-footer: rgb(219, 213, 213);
+
+    --border-radius: 4px;
+}
+
+*{
+    margin: 0;
+    font-family: "Rajdhani";
+    box-sizing: border-box;
+}
+
+/*** HEADER ***/
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--color-fondo-header);
+}
+
+header div{
+    display: flex;
+}
+
+header div img{
+    width: 10%;
+    margin-right: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--color-menu-header);
+    font-size: 35px;
+}
+
+/*** MAIN ***/
+
+main {
+    margin: 30px 30px;
+}
+
+main h1{
+    font-weight: 600;
+}
+
+/*** SECCION NACIONAL E INTERNACIONAL ***/ 
+
+.nacional, .internacional{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+}
+
+/*** ARTICULOS DE LAS NOTICIAS ***/ 
+
+article{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 30%;
+    margin-right: 20px;
+    display: flex;
+    align-items: inherit;
+    flex-wrap: wrap;
+}
+
+.nacional article{
+    background-color: var(--color-nacional);
+}
+
+.internacional article{
+    background-color: var(--color-internacional);
+}
+
+.nacional h2, .internacional h2{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+article h4{
+    background-color: var(--color-titulo-noticia);
+    padding: 5px;
+}
+
+article img {
+    margin: 20px 0px;
+    width: 80%;
+    align-self: center;
+}
+
+article h6{
+    width: 100%;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.nacional h6{
+    color: var(--color-fecha-nacional)
+}
+
+.internacional h6{
+    color: var(--color-fecha-internacional);
+}
+
+/*** FOOTER ***/
+footer{
+    background-color: var(--color-fondo-footer);
+    color: var(--color-letras-footer);
+}
+
+footer p{
+    text-align: center;
+    padding: 10px 0px;
+}

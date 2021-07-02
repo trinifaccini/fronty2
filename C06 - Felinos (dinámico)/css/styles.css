@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(219, 219, 219);
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+h1 {
+  padding: .5em 1em;
+  border-bottom: 1px solid lightgrey;
+  color: grey;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+button{
+  color: #000000;
+  background-color: #ffffff;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 10px;
+  width: 125px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2em 10%;
+}
+
+.item {
+  width: 30em;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item h2 {
+  font-size: 1em;
+  margin-bottom: .2em;
+}
+
+
+/* estilos para tema oscuro ---------------------------------------------------------------------------------------------- */
+/* los suigientes estilos son los que usaremos para aplicar el modo oscuro, ustedes deberán modificar los selectores para
+poder resolver el ejercicio */
+
+
+/*el color de fondo*/
+
+body .dark {
+  background-color: rgb(39, 39, 39);
+}
+
+.dark header{
+  background-color: rgb(19, 19, 19);
+}
+
+/*las modificaciones al titulo 'la familia de los felinos*/
+
+.dark h1 { 
+  color: rgb(170, 170, 170);
+  border-color: black;
+}
+
+.dark button{
+  color: #ffffff;
+  background-color: #000000;
+  border-width: 2px;
+  border-color: #FFFFFF;
+
+}
+
+/*las modificaciones a los items*/
+
+.dark div .item{
+  background-color: rgb(19, 19, 19);
+  border-color: black;
+}
+
+/*las modificaciones a los textos de los items y los titulos de ellos*/
+
+.dark div .item h2, .dark div .item p{
+  color: rgb(230, 230, 230);
+}
+
+
