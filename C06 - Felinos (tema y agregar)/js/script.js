@@ -1,4 +1,4 @@
-/*------------------ EJERCITACION CLASE  ----------------*/
+/*------------------ EJERCITACION CLASE 5 ----------------*/
 
 let body = document.querySelector('body');
 
@@ -40,10 +40,10 @@ let item5 = new Item('./imagenes/chita.jpg', 'El guepardo', 'El guepardo o chita
 let items = [];
 items.push(item1,item2, item3, item4, item5);
 
+console.log("hola");
+
 
 //OPCION 1 -- FUNCIONA -- 
-
-/*
 
 let contenedor = document.querySelector('.contenedor');
 
@@ -66,13 +66,10 @@ for(let item of items){
     contenedor.innerHTML += agregarItem1(item.imagen, item.titulo, item.parrafo);
 }
 
-*/
-
 
 //OPCION 2 -- FUNCIONA -- 
 
 /*
-
 function agregarItem2(urlImgagen, titulo, parrafo){
 
     let contenedor = document.querySelector('.contenedor');
@@ -88,14 +85,12 @@ function agregarItem2(urlImgagen, titulo, parrafo){
     
     contenedor.innerHTML += templateItem;
 }
-
 */
 
 
 //OPCION 3 -- FUNCIONA --
 
 /*
-
 let contenedor = document.querySelector('.contenedor');
 
 for(let item of items){
@@ -108,19 +103,16 @@ for(let item of items){
     </div>
     `;
 }
-
 */
 
 
 //OPCION 4 -- FUNCIONA --
 
 /*
-
 let contenedor = document.querySelector('.contenedor');
 
 for(let item of items){
 
     contenedor.innerHTML += "<div class = 'item'>" + "<img src = ' " + item.imagen + "'img>" + "<h2>" + item.titulo + "<p>" + item.parrafo +"</p>" + "</div>";
 }
-
 */
