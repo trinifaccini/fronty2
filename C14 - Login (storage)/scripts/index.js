@@ -35,16 +35,37 @@ const baseDeDatos = {
 // 1) Al momento de que la persona inicia sesión, si las validaciones que ya tenemos implementadas
 // han sido exitosas, deberemos almacenar la información del usuario en el LocalStorage.
 
-// 2) Al mensaje de bienvenida que ya teníamos implementado, deberemos agregarle el nombre de la
-// persona y un botón de "Cerrar Sesión".
+window.addEventListener("load", function(){ 
+  let formulario = document.querySelector("form");
 
-// 3) Una vez iniciada la sesión, la misma se deberá mantener en ese estado para el caso de que la persona
-// recargue la página. Para ello, deberás validar si existe información del usuario al momento en
-// que se produce la carga de la página, y en base a dicha condción decidir que elementos mostrar.
+  formulario.addEventListener("submit", function(event){
+    
+    //Prevenimos el envío del formulario 
+    event.preventDefault();
+    console.log("Se detuvo el envío de la informacion...");
 
-// 3) Para el caso de que la persona haga click en el botón "Cerrar Sesión", se deberá eliminar
-// la información del usuario, mostrar un mensaje indicando que se ha cerrado la sesión, y recargar
-// la página para mostrar nuevamente el formulario de login.
+    //Capturamos los elementos html que necesitamos
+    let inputEmail = document.querySelector("#email-input");
+    let inputPassword = document.querySelector("#password-input");
+
+
+    //Validamos
+    baseDeDatos.usuarios.forEach(function(element) {
+
+      //Primero chequeamos que el email ingresado coincide con alguno de todos los que tenemos en la base de datos
+      if(element.email == inputEmail.value) {
+
+        //Si se dió esa coincidencia, chequeamos que la contraseña coincida también para almacenar 
+        // su inicio de sesión en LocalStorage y para llevarlo a la página de incio
+        if(element.password == inputPassword.value) {
+          localStorage.setItem("email", element.email);
+          formulario.submit();
+        }
+      }
+    })
+  })
+
+})
 
 /* 
 TIPS:
@@ -62,4 +83,4 @@ TIPS:
     usuario.
 
    ¡Manos a la obra!
- */
+*/

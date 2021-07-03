@@ -45,8 +45,13 @@ window.addEventListener("load", function(){
             errorPass.innerText = errores.password;
         }
 
+        console.log(inputPass.value);
+        console.log(typeof inputPass.value);
+        console.log(inputRePass.value);
+        console.log(typeof inputRePass.value);
+
         //Paso 2: Que las contraseñas coincidan 
-        if(inputPass.value.length > 1 && inputPass.value != inputRePass.value){
+        if((inputPass.value.length >= 1) && (inputPass.value !== inputRePass.value)){
             errores.repassword = "Las contraseñas no coinciden";
             errorRePass.innerText = errores.repassword;
         }
@@ -55,6 +60,7 @@ window.addEventListener("load", function(){
         console.log(errores);
         //Luego de validar, comprobar si hay o no errores. Si no los hay, puede ingresar
         //Objet.keys(errores) me devuelve un array con los nombre de las PROPIEDADES --keys-- del objeto errores
+        
         if(Object.keys(errores).length == 0){
             formHogwarts.submit();
         }

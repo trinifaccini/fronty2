@@ -10,7 +10,7 @@
   <body>
     <main>
       <h1>Iniciar Sesión</h1>
-      <form>
+      <form action="bienvenida.html" method="POST">
         <div class="input-container">
           <label for="email">Email</label>
           <input
@@ -33,7 +33,7 @@
           <div id="loader" class="hidden">Iniciando Sesión...</div>
           <div id="error-container" class="hidden"></div>
         </div>
-        <button class="login-btn" type="button">Inciar sesión</button>
+        <button class="login-btn" type="submit">Inciar sesión</button>
       </form>
     </main>
     <script src="./scripts/index.js"></script>
