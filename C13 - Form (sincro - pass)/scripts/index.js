@@ -46,7 +46,7 @@ window.addEventListener("load", function(){
         }
 
         //Paso 2: Que las contraseñas coincidan 
-        if(inputPass.value.length > 1 && inputPass.value != inputRePass.value){
+        if(inputPass.value.length >= 1 && inputPass.value != inputRePass.value){
             errores.repassword = "Las contraseñas no coinciden";
             errorRePass.innerText = errores.repassword;
         }
