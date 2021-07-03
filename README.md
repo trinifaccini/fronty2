@@ -12,5 +12,6 @@
 - Clase 12: Validamos el mismo formulario de forma sincrónica pero esta vez pusimos en escucha el evento submit del form.
 - Clase 13: Validamos otro formulario de forma sincrónica, comparamos contraseñas.
 - Clase 13: Validamos un formulario de forma asincrónica (HACER)
-- Clase 14: Trabajamos con el storage de un Login. (HACER)
-- Clase 15: Trabajamos con el storage de comentarios. (HACER)
+- Clase 14: Trabajamos con JSON.
+- Clase 14: Trabajamos con el storage de un Login. 
+- Clase 15: Trabajamos con el storage de comentarios. 
