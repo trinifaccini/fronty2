@@ -16,4 +16,4 @@
 - Clase 14: Trabajamos con el storage de un Login. 
 - Clase 15: Trabajamos con el storage de comentarios.
 - Clase 16: Trabajamos con asincronismo (promesas)
-- Clase 17: Trabajamos con Fetch (promesas)
+- Clase 17: Trabajamos con Fetch - GET (promesas)
