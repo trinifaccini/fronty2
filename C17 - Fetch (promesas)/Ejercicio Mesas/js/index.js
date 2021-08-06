@@ -24,8 +24,10 @@ function renderizarDatosUsuario(datos) {
 
 }
 
-/*  Aquí realizamos un la consulta de la promesa, esperando su respuesta asíncrona */
-fetch('https://randomuser.me/api/')
+function pedirUsuarioRandom(){
+
+    /*  Aquí realizamos un la consulta de la promesa, esperando su respuesta asíncrona */
+    fetch('https://randomuser.me/api/')
     .then(response => {
 
         /*  El metodo .json() se queda solo con el BODY de la RESPONSE y ademas lo devuelve ya PARSEADO
@@ -45,13 +47,22 @@ fetch('https://randomuser.me/api/')
         renderizarDatosUsuario(data);
     });
     /* --> aca iria el catch */
+}
 
 
 
 
-/* --------------------------- CONSIGNA 2 (extra) --------------------------- */
+/* --------------------------- CONSIGNA 2 --------------------------- */
 /*  Aqui pueden ir por el punto extra de utilizar el boton que se encuentra comentado en el HTML
     Pueden descomentar el código del index.html y usar ese boton para ejecutar un nuevo pedido a la API, 
     sin necesidad de recargar la página.
     Es criterio del equipo QUÉ bloque del código debe contenerse dentro de una función para poder ser ejecutada 
     cada vez que se escuche un click. */
+
+let boton = document.querySelector("#random");
+
+boton.addEventListener("click", function(){
+
+    pedirUsuarioRandom();
+
+})
