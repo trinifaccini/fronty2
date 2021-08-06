@@ -14,4 +14,6 @@
 - Clase 13: Validamos un formulario de forma asincrónica *(HACER)*
 - Clase 14: Trabajamos con JSON.
 - Clase 14: Trabajamos con el storage de un Login. 
-- Clase 15: Trabajamos con el storage de comentarios. 
+- Clase 15: Trabajamos con el storage de comentarios.
+- Clase 16: Trabajamos con asincronismo (promesas) *(Terminar de subirlo)*
+- Clase 17: Trabajamos con Fetch - GET (promesas)
